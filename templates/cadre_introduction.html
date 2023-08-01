@@ -1,115 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CKCSC-36</title>
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
 </head>
+
 <body>
 
   <!-- Navigation Bar -->
   {% include 'navbar.html' %}
 
-  
-  
   <!-- Main Content -->
   <div class="container mt-4">
     <h1>幹部簡介</h1>
-    <div class="row row_indexnav">
-      <div class="col-12 col-md-4">
-        <div class="card" style="width: 18rem;">
-          <img src="static/cadre_IMG/Aukro.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h3 class="card-title fw-bolder">林旺豪(Aukro)</h3>
-            <h5>社長/教學</h5>
-            <h5 class="card-text">這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤</h5>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="card" style="width: 18rem;">
-          <img src="static/cadre_IMG/Fu.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">傅世寬(鯊魚)<h5>
-            <p class="card-text">這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤</p>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="card" style="width: 18rem;">
-          <img src="static/wx3.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">堇姬<h5>
-            <p class="card-text">這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤</p>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="card" style="width: 18rem;">
-          <img src="static/wx3.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">堇姬<h5>
-            <p class="card-text">這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤</p>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="card" style="width: 18rem;">
-          <img src="static/wx3.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">堇姬<h5>
-            <p class="card-text">這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤</p>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="card" style="width: 18rem;">
-          <img src="static/wx3.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">堇姬<h5>
-            <p class="card-text">這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤</p>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="card" style="width: 18rem;">
-          <img src="static/wx3.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">堇姬<h5>
-            <p class="card-text">這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤</p>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-4">
-        <div class="card" style="width: 18rem;">
-          <img src="static/wx3.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">堇姬<h5>
-            <p class="card-text">這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤</p>
-            
-          </div>
-        </div>
-      </div>
-      
-    <br></br>
+    <div class="row row_indexnav" id="card-container">
     </div>
   </div>
+
   <br></br>
-    
-  
+  <script>
+    const cardsData = [
+      {
+        name: "林旺豪(Aukro)",
+        role: "社長/教學",
+        description: "這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤",
+        imageSrc: "static/cadre_IMG/Aukro.png",
+      },
+      {
+        name: "傅世寬(鯊魚)",
+        role: "", 
+        description: "這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤", // 添加描述信息
+        imageSrc: "static/cadre_IMG/Fu.png",
+      },
+      {
+        name: "傅世寬(鯊魚)",
+        role: "", 
+        description: "這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤", // 添加描述信息
+        imageSrc: "static/cadre_IMG/Fu.png",
+      },
+      {
+        name: "傅世寬(鯊魚)",
+        role: "", 
+        description: "這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤", // 添加描述信息
+        imageSrc: "static/cadre_IMG/Fu.png",
+      },
+      {
+        name: "傅世寬(鯊魚)",
+        role: "", 
+        description: "這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤", // 添加描述信息
+        imageSrc: "static/cadre_IMG/Fu.png",
+      },
+      {
+        name: "林旺豪(Aukro)",
+        role: "社長/教學",
+        description: "這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤",
+        imageSrc: "static/cadre_IMG/Aukro.png",
+      },
+      {
+        name: "傅世寬(鯊魚)",
+        role: "", 
+        description: "這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤", // 添加描述信息
+        imageSrc: "static/cadre_IMG/Fu.png",
+      },
+      {
+        name: "傅世寬(鯊魚)",
+        role: "", 
+        description: "這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤", // 添加描述信息
+        imageSrc: "static/cadre_IMG/Fu.png",
+      },
+      {
+        name: "傅世寬(鯊魚)",
+        role: "", 
+        description: "這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤", // 添加描述信息
+        imageSrc: "static/cadre_IMG/Fu.png",
+      },
+      {
+        name: "傅世寬(鯊魚)",
+        role: "", 
+        description: "這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤", // 添加描述信息
+        imageSrc: "static/cadre_IMG/Fu.png",
+      },
+      {
+        name: "林旺豪(Aukro)",
+        role: "社長/教學",
+        description: "這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤",
+        imageSrc: "static/cadre_IMG/Aukro.png",
+      },
+      {
+        name: "傅世寬(鯊魚)",
+        role: "", 
+        description: "這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤", // 添加描述信息
+        imageSrc: "static/cadre_IMG/Fu.png",
+      },
+      {
+        name: "傅世寬(鯊魚)",
+        role: "", 
+        description: "這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤", // 添加描述信息
+        imageSrc: "static/cadre_IMG/Fu.png",
+      },
+      {
+        name: "傅世寬(鯊魚)",
+        role: "", 
+        description: "這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤", // 添加描述信息
+        imageSrc: "static/cadre_IMG/Fu.png",
+      },
+      
+    ];
+
+    // 获取容器
+    const cardContainer = document.getElementById("card-container");
+
+    // 创建并添加卡片
+    function createCard(data) {
+      const cardDiv = document.createElement("div");
+      cardDiv.classList.add("col-12", "col-md-4");
+
+      const cardContent = `
+        <div class="card" style="width: 18rem;">
+          <img src="${data.imageSrc}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title">${data.name}</h3>
+            <h5>${data.role}</h5>
+            <p class="card-text">${data.description}</p>
+          </div>
+        </div>
+      `;
+
+      cardDiv.innerHTML = cardContent;
+      cardContainer.appendChild(cardDiv);
+    }
+
+
+    function displayCardsInRows() {
+      let rowDiv;
+      for (let i = 0; i < cardsData.length; i++) {
+        const data = cardsData[i];
+        createCard(data);
+        if ((i + 1) % 3===0 || i===cardsData.length - 1) {
+          // Create a new row after every 3 cards or for the last card
+          rowDiv = document.createElement("div");
+          rowDiv.classList.add("row");
+          cardContainer.appendChild(rowDiv);
+        }
+      }
+    }
+
+    displayCardsInRows();
+
+  </script>
+
   {% include 'footer.html' %}
-<!-- Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
 </body>
+
 </html>
