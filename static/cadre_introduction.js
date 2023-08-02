@@ -9,8 +9,8 @@ const cardsData = [
     {
       name: "傅世寬(鯊魚)",
       role: "副社/公關", 
-      description: "這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤",
-      imageSrc: "static/cadre_IMG/Fu.png",
+      description: "興趣聽歌、打球、社交（？，然後會一點C++ html css，還喜歡騎車跟游泳。專長：我啥都會（沒",
+      imageSrc: "static/cadre_IMG/Fu.jpg",
       IG:"https://www.instagram.com/ckcsc36th_shark/"
     },
     {
@@ -39,7 +39,7 @@ const cardsData = [
       role: "網管/美宣",
       description: "競程、專案、資安CTF都有涉獵，平時也喜歡畫畫，是一隻活了四千年的鶴仙姐姐",
       imageSrc: "static/cadre_IMG/Naup.jpg",
-      IG:"https://www.instagram.com/ckcsc36th_naup/"
+      IG:"https://linktr.ee/naupjjin"
     },
     {
       name: "范昀圻(Cheer•FAN)",
@@ -63,18 +63,18 @@ const cardsData = [
       IG:"https://www.instagram.com/ckcsc36th_rekai/"
     },
     {
-      name: "傅世寬(鯊魚)",
-      role: "", 
-      description: "這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤",
-      imageSrc: "static/cadre_IMG/Fu.png",
-      IG:""
+      name: "謝佳勳(josh)",
+      role: "網管", 
+      description: "主要學習網頁,擅長尬聊,居住於召喚師峽谷",
+      imageSrc: "static/cadre_IMG/josh.jpg",
+      IG:"https://www.instagram.com/ckcsc36th_josh/"
     },
     {
-      name: "林旺豪(Aukro)",
-      role: "社長/教學",
+      name: "林育廷(ddd)",
+      role: "文書/網管長",
       description: "這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤",
-      imageSrc: "static/cadre_IMG/Aukro.png",
-      IG:""
+      imageSrc: "static/cadre_IMG/ddd.png",
+      IG:"https://www.instagram.com/ckcsc36th_ddd/"
     },
     {
       name: "傅世寬(鯊魚)",
