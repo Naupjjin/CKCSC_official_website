@@ -2,7 +2,7 @@ const cardsData = [
     {
       name: "林旺豪(Aukro)",
       role: "社長/教學",
-      description: "這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤",
+      description: "喜歡聽人分享人生故事。把一個人從不會教到會超級爽，所以只要你覺得你沒完全懂都是我的問題，盡量問。",
       imageSrc: "static/cadre_IMG/Aukro.png",
       IG:"https://www.instagram.com/ckcsc36th_aukro/"
     },
@@ -37,7 +37,7 @@ const cardsData = [
     {
       name: "楊皓宇(堇姬Naup)",
       role: "網管/美宣",
-      description: "競程、專案、資安CTF都有涉獵，平時也喜歡畫畫，是一隻活了四千年的鶴仙姐姐",
+      description: "競程、專案、資安CTF都有涉獵，平時也喜歡畫畫，是一隻活了四千年的鶴仙姐姐，也喜歡跟各領域的人交流。",
       imageSrc: "static/cadre_IMG/Naup.jpg",
       IG:"https://linktr.ee/naupjjin"
     },
@@ -77,25 +77,25 @@ const cardsData = [
       IG:"https://www.instagram.com/ckcsc36th_ddd/"
     },
     {
-      name: "傅世寬(鯊魚)",
-      role: "", 
-      description: "這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤",
-      imageSrc: "static/cadre_IMG/Fu.png",
-      IG:""
+      name: "陳仕愷(shikai)",
+      role: "公關", 
+      description: "喜歡攝影、聽歌、看劇、打球、社交，希望能認識更多人，學好網頁",
+      imageSrc: "static/cadre_IMG/shikai.jpg",
+      IG:"https://www.instagram.com/ckcsc36th_shikai/"
     },
     {
-      name: "傅世寬(鯊魚)",
-      role: "", 
-      description: "這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤",
-      imageSrc: "static/cadre_IMG/Fu.png",
-      IG:""
+      name: "林禹睿(rcherry)",
+      role: "教學", 
+      description: "我喜歡做遊戲還有競程。ROBLOX IS NOT A KIDS GAME",
+      imageSrc: "static/cadre_IMG/rcherry.jpg",
+      IG:"https://www.instagram.com/ckcsc36th_cherry/"
     },
     {
-      name: "傅世寬(鯊魚)",
-      role: "", 
-      description: "這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤",
-      imageSrc: "static/cadre_IMG/Fu.png",
-      IG:""
+      name: "陳柏叡(Ruei)",
+      role: "網管", 
+      description: "主要學習網頁，興趣是看VT和打APEX，トワ單推",
+      imageSrc: "static/cadre_IMG/ruei.jpg",
+      IG:"https://www.instagram.com/ckcsc36th_ruei/"
     },
     
   ];

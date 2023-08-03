@@ -18,49 +18,12 @@
             <h1 class="fw-bolder">我們的slides簡報</h1>
             <p class="lead fw-normal text-muted mb-0">有興趣可以來看喔~</p>
         </div>
-        <div class="row gx-5">
-            <div class="col-lg-6">
-                <div class="position-relative mb-5">
-                    <a href="https://slides.com/naup96321/code"><img class="img-fluid rounded-3 mb-3" src="static/slides/RSA.png" alt="..." /></a>
-                    <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="https://slides.com/naup96321/code">RSA加密</a>
-                    <p>製作:堇姬</p>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="position-relative mb-5">
-                    <a href="https://slides.com/naup96321/deck"><img class="img-fluid rounded-3 mb-3" src="static/slides/DLBase.png" alt="..." /></a>
-                    <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="https://slides.com/naup96321/deck">深度學習初探</a>
-                    <p>製作:堇姬</p>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="position-relative mb-5">
-                    <a href="https://slides.com/ereshkigal/cpp"><img class="img-fluid rounded-3 mb-3" src="static/slides/C++語法.png" alt="..." /></a>
-                    <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="https://slides.com/ereshkigal/cpp">C++基礎語法</a>
-                    <p>製作:Aukro</p>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="position-relative mb-5">
-                    <a href="https://slides.com/ereshkigal/crypto"><img class="img-fluid rounded-3 mb-3" src="static/slides/基礎密碼學.png" alt="..." /></a>
-                    <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="https://slides.com/ereshkigal/crypto">古典密碼學</a>
-                    <p>製作:Aukro</p>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="position-relative mb-5">
-                    <a href="https://slides.com/ddd-dong/palette"><img class="img-fluid rounded-3 mb-3" src="static/slides/RL.png" alt="..." /></a>
-                    <a class="h3 fw-bolder text-decoration-none link-dark stretched-link" href="https://slides.com/ddd-dong/palette">強化學習</a>
-                    <p>製作:DDD</p>
-                </div>
-            </div>
-        </div>
+        <div class="row gx-5" id="slideContainer"></div>
     </div>
 </section>
-  
- 
-    {% include 'footer.html' %}
 
+{% include 'footer.html' %}
+<script src="static/slides.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
