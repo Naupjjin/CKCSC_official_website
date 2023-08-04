@@ -4,28 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flag2</title>
-    <script>
-        function check(form){
-            let pw=form.querySelector('[name=pw]').value;
-            if (pw=="Naup_Sumire_Hime"){
-                alert("不讓你送Naup_Sumire_Hime，想想其他辦法吧~");
-                return false;
-            }
-            else{
-                alert("密碼錯誤");
-                return false;
-            }
-        }
-
-    </script>
-  
+  <!-- Add Bootstrap CSS link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script>
+    function check(form) {
+      let pw = form.querySelector('[name=pw]').value;
+      if (pw == "Naup_Sumire_Hime") {
+        alert("不讓你送Naup_Sumire_Hime，想想其他辦法吧~");
+        return false;
+      } else {
+        alert("密碼錯誤");
+        return false;
+      }
+    }
+  </script>
 </head>
-<body>
-    <h1>社網我偷偷藏了個東西，只要你輸入正確的密碼</h1>
-    <p>跟你說喔，密碼是Naup_Sumire_Hime</p>
+<body class="bg-light">
+  <div class="container py-5">
+    <h1 class="display-4">社網我偷偷藏了個東西，只要你輸入正確的密碼</h1>
+    <p class="lead">跟你說喔，密碼是Naup_Sumire_Hime</p>
     <form onsubmit="return check(this)" action="/send_flag" method="post">
-        <input type="password" name="pw" placeholder="密碼打這裡喔~">
-        <input type="submit" value="送出">
+      <div class="mb-3">
+        <input type="password" name="pw" class="form-control" placeholder="密碼打這裡喔~">
+      </div>
+      <button type="submit" class="btn btn-primary">送出</button>
     </form>
+  </div>
+
+  <!-- Add Bootstrap JS and Popper.js scripts (required for certain Bootstrap features) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

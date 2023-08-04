@@ -1,4 +1,4 @@
-from flask import Flask,render_template,send_from_directory
+from flask import Flask,render_template,send_from_directory,request,redirect,url_for
 
 app=Flask(__name__)
 
@@ -42,8 +42,10 @@ def WEB3_flag():
 
 @app.route("/send_flag",methods=["POST","GET"])
 def send_flag3():
-    
-    return render_template('flag3.html')
+
+    if request.method=="POST":
+        return render_template('flag3.html')
+    return redirect(url_for('home'))
 #########################################################
 
 if __name__ == "__main__":
