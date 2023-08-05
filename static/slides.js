@@ -29,7 +29,7 @@ const slidesData = [
         link: "https://slides.com/ddd-dong/rl",
         creator: "製作:ddd"
     }
-    // Add more slide data objects here
+    
 ];
 
 const slideContainer = document.getElementById('slideContainer');

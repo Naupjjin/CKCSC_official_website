@@ -9,28 +9,28 @@ const cardsData = [
     {
       name: "傅世寬(鯊魚)",
       role: "副社/公關", 
-      description: "興趣聽歌、打球、社交（？，然後會一點C++ html css，還喜歡騎車跟游泳。專長：我啥都會（沒",
+      description: "<br>興趣聽歌、打球、社交（？，然後會一點C++ html css，還喜歡騎車跟游泳。專長：我啥都會（沒",
       imageSrc: "static/cadre_IMG/Fu.jpg",
       IG:"https://www.instagram.com/ckcsc36th_shark/"
     },
     {
       name: "陳韋帆(Spikkaido)",
       role: "教學/總務", 
-      description: "我的主要領域在競程，最近在活化我的線段樹技巧，好想變強QQ",
+      description: "<br>我的主要領域在競程，最近在活化我的線段樹技巧，好想變強QQ<br>ㅤ",
       imageSrc: "static/cadre_IMG/spikkaido.jpg",
       IG:"https://www.instagram.com/ckcsc36th_chennn/"
     },
     {
       name: "蔡家澤(你)",
       role: "教學", 
-      description: "我好弱我只想要把APCS考好啊啊啊啊啊啊啊",
+      description: "<br>我好弱我只想要把APCS考好啊啊啊啊啊啊啊<br>ㅤ",
       imageSrc: "static/cadre_IMG/you.jpg",
       IG:"https://www.instagram.com/ckcsc36th_you/"
     },
     {
       name: "廖文碩(skotono)",
       role: "教學", 
-      description: "I am the storm that is approaching",
+      description: "<br>I am the storm that is approaching<br><br>ㅤ",
       imageSrc: "static/cadre_IMG/skotono.jpg",
       IG:"https://www.instagram.com/ckcsc36th_skotono/"
     },
@@ -51,21 +51,21 @@ const cardsData = [
     {
       name: "蔡昀熹(BalloonteHsi)",
       role: "活動", 
-      description: "mproving my English…",
+      description: "mproving my English…<br>ㅤ",
       imageSrc: "static/cadre_IMG/Hsi.jpg",
       IG:"https://www.instagram.com/cgbx_ckcsc36th_hsi/"
     },
     {
       name: "李日凱(土撥鼠)",
       role: "公關/美宣", 
-      description: "成功麥塊社公關，興趣有聽歌和彈吉他，努力擴大自己交友圈中",
+      description: "成功麥塊社公關，興趣有聽歌和彈吉他，努力擴大自己交友圈中<br>ㅤ",
       imageSrc: "static/cadre_IMG/rekai.jpg",
       IG:"https://www.instagram.com/ckcsc36th_rekai/"
     },
     {
       name: "謝佳勳(josh)",
       role: "網管", 
-      description: "主要學習網頁,擅長尬聊,居住於召喚師峽谷",
+      description: "主要學習網頁,擅長尬聊,居住於召喚師峽谷<br>ㅤ",
       imageSrc: "static/cadre_IMG/josh.jpg",
       IG:"https://www.instagram.com/ckcsc36th_josh/"
     },
@@ -79,7 +79,7 @@ const cardsData = [
     {
       name: "陳仕愷(shikai)",
       role: "公關", 
-      description: "喜歡攝影、聽歌、看劇、打球、社交，希望能認識更多人，學好網頁",
+      description: "喜歡攝影、聽歌、看劇、打球、社交，希望能認識更多人，學好網頁<br>ㅤ",
       imageSrc: "static/cadre_IMG/shikai.jpg",
       IG:"https://www.instagram.com/ckcsc36th_shikai/"
     },
@@ -109,7 +109,7 @@ cardDiv.classList.add("col-12", "col-md-4");
 
 const cardContent = `
     <div class="card" style="width: 18rem;">
-    <a href="${data.IG}"><img src="${data.imageSrc}" class="card-img-top" alt="..."></a>
+    <a href="${data.IG}"><img src="${data.imageSrc}" class="card-img-top" style=" height:21rem; object-fit: cover;" alt="..."></a>
     <div class="card-body">
         <h3 class="card-title">${data.name}</h3>
         <h5>${data.role}</h5>
