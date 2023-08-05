@@ -37,7 +37,7 @@ const cardsData = [
     {
       name: "楊皓宇(堇姬Naup)",
       role: "網管/美宣",
-      description: "競程、專案、資安CTF都有涉獵，平時也喜歡畫畫，是一隻活了四千年的鶴仙姐姐，也喜歡跟各領域的人交流。",
+      description: "競程、專案、資安CTF都有涉獵，平時也喜歡畫畫，是<a href='http://hsvi.ddns.net'>HSVI玥綾繪師媽媽</a>，是一隻活了四千年的鶴仙姐姐，也喜歡和各領域的人交流。",
       imageSrc: "static/cadre_IMG/Naup.jpg",
       IG:"https://linktr.ee/naupjjin"
     },
@@ -72,7 +72,7 @@ const cardsData = [
     {
       name: "林育廷(ddd)",
       role: "文書/網管長",
-      description: "這是一段 HTML 程式碼，其中包含三個引入 JavaScript 檔案的 script 標籤",
+      description: "同時擔任<a href='http://hsvi.ddns.net'>HSVI幽夜工作室副社長</a>一職，致力於學習NLP和LLM領域。",
       imageSrc: "static/cadre_IMG/ddd.png",
       IG:"https://www.instagram.com/ckcsc36th_ddd/"
     },
