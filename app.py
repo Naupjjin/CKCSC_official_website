@@ -38,7 +38,7 @@ def WEB2_flag():
 #ckcscCTF3
 @app.route("/Y2tjc2NDVEYz",methods=["POST","GET"])
 def Y2tjc2NDVEYz():
-    return render_template("ckcscCTF_Flag3.html")
+    return render_template("ckcscCTF_flag3.html")
 
 @app.route("/send_flag",methods=["POST","GET"])
 def send_flag3():
