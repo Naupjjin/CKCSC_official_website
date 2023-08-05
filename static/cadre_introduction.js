@@ -114,7 +114,7 @@ const cardDiv = document.createElement("div");
 cardDiv.classList.add("col-12", "col-md-4");
 
 const cardContent = `
-    <div class="card" style="width: 18rem;">
+    <div class="card mb-3" style="width: 18rem;">
     <a href="${data.IG}"><img src="${data.imageSrc}" class="card-img-top" style=" height:21rem; object-fit: cover;" alt="..."></a>
     <div class="card-body">
         <h3 class="card-title">${data.name}</h3>
