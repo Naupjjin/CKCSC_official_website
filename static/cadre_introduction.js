@@ -2,7 +2,7 @@ const cardsData = [
     {
       name: "林旺豪(Aukro)",
       role: "社長/教學",
-      description: "喜歡聽人分享人生故事。把一個人從不會教到會超級爽，所以只要你覺得你沒完全懂都是我的問題，盡量問。",
+      description: "純愛戰士，反獵奇反牛頭人好吃狗糧。享受教友學習熱忱的人。<br><br>ㅤ",
       imageSrc: "static/cadre_IMG/Aukro.png",
       IG:"https://www.instagram.com/ckcsc36th_aukro/"
     },
