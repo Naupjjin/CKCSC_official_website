@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首頁</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="static/slides.js"></script>
+</head>
+<body>
+
+  {% include 'navbar.html' %}
+
+
+  <header class="py-5" style="background-color: #ffd3b6; background-image: url('static/back.jpg');background-size: cover;background-repeat:no-repeat;background-position: center center;;">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center justify-content-center position-relative" style="background-color: rgba(255, 203, 168, 0.6);">
+            <div class="col-lg-8 col-xl-7 col-xxl-6">
+                <div class="my-5 text-center text-xl-start">
+                    <h1 class="display-5 fw-bolder mb-2 font-weight-bold" style="color: #212529; font-size:4rem;">我們是成功電研36屆</h1>
+                    <br></br>
+                    <p class="lead fw-normal  mb-4 font-weight-bold" style="color: #495057;">成電是一個以程式設計為主軸的社團，目前著重於競技程式與專案開發，未來希望可以推動資安(CTF)的教學。目前與建中資訊、中山資研，景美電資合組IZCC 、會一起辦活動、小社課等等。</p>
+                    <p class="lead fw-normal  mb-4 font-weight-bold" style="color: #495057;">我們致力於提供學習程式的一個環境，並鼓勵學生積極參與程式競賽，培養解決問題的能力和團隊合作精神。</p>
+                    <p class="lead fw-normal  mb-4 font-weight-bold" style="color: #495057;">#社網裡藏有三個flag，對CTF有興趣的可以玩玩看。<br>格式->ckcscCTF{}</p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                        <br></br>
+                        <a class="btn btn-primary btn-lg px-4 me-sm-3 font-weight-bold" style="background-color: #212529;" href="{{url_for('club_introduce')}}">了解更多</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5 " style="width:80% ;" src="static/homeimg.png" alt="..." /></div>
+        </div>
+    </div>
+</header>
+
+
+
+ 
+
+  
+  
+  {% include 'footer.html' %}
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

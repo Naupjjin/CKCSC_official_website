@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /home/
+Allow: /club_introduce/
+Allow: /slides/
+Allow: /class_introduce/
+Allow: /cadre_introduction/
+Disallow: /Q0tDU0MzNl9JIExPVkUgQ1RGLkJ5IE5hdXBKamluLg/
